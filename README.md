@@ -7,4 +7,4 @@ CNU Python Study Group Repository
 2. conda activate (환경이름)
 3. pip install numpy
 4. pip install opencv-python
-5. 
+5. pip install opencv-contrib-python
