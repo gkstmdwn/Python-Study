@@ -1,12 +1,16 @@
 # BFMatcher와 SIFT로 매칭 (match_bf_sift.py)
 
 import cv2, numpy as np
+import matplotlib.pyplot as plt
 
 img1 = cv2.imread('./Image1.jpg')
 img2 = cv2.imread('./Image2.jpg')
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-
+plt.imshow(gray1)
+plt.imshow(gray2)
+plt.show()
+print(gray1)
 # SIFT 서술자 추출기 생성 ---①
 detector = cv2.xfeatures2d.SIFT_create()
 # 각 영상에 대해 키 포인트와 서술자 추출 ---②
